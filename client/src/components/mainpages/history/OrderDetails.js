@@ -25,10 +25,10 @@ function OrderDetails() {
             <table>
                 <thead>
                     <tr>
-                        <th>Name</th>
-                        <th>Address</th>
-                        <th>Postal Code</th>
-                        <th>Country Code</th>
+                        <th>Név</th>
+                        <th>Cím</th>
+                        <th>Postai cím</th>
+                        <th>Ország</th>
                     </tr>
                 </thead>
                 <tbody>
