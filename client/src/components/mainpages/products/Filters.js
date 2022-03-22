@@ -20,7 +20,7 @@ function Filters() {
             <div className="row">
                 <span>Filters: </span>
                 <select name="category" value={category} onChange={handleCategory} >
-                    <option value=''>All Products</option>
+                    <option value=''>Állatok</option>
                     {
                         categories.map(category => (
                             <option value={"category=" + category._id} key={category._id}>
@@ -31,10 +31,10 @@ function Filters() {
                 </select>
             </div>
 
-            <input type="text" value={search} placeholder="Enter your search!"
+            <input type="text" value={search} placeholder="Keresés!"
             onChange={e => setSearch(e.target.value.toLowerCase())} />
 
-            <div className="row sort">
+            {/* <div className="row sort">
                 <span>Sort By: </span>
                 <select value={sort} onChange={e => setSort(e.target.value)} >
                     <option value=''>Newest</option>
@@ -43,7 +43,7 @@ function Filters() {
                     <option value='sort=-price'>Price: Hight-Low</option>
                     <option value='sort=price'>Price: Low-Hight</option>
                 </select>
-            </div>
+            </div> */}
         </div>
     )
 }

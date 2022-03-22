@@ -29,19 +29,19 @@ function Register() {
     return (
         <div className="login-page">
             <form onSubmit={registerSubmit}>
-                <h2>Register</h2>
+                <h2>Regisztráció</h2>
                 <input type="text" name="name" required
-                placeholder="Name" value={user.name} onChange={onChangeInput} />
+                placeholder="Nev" value={user.name} onChange={onChangeInput} />
 
                 <input type="email" name="email" required
-                placeholder="Email" value={user.email} onChange={onChangeInput} />
+                placeholder="E-mail" value={user.email} onChange={onChangeInput} />
 
                 <input type="password" name="password" required autoComplete="on"
-                placeholder="Password" value={user.password} onChange={onChangeInput} />
+                placeholder="Jelszo" value={user.password} onChange={onChangeInput} />
 
                 <div className="row">
-                    <button type="submit">Register</button>
-                    <Link to="/login">Login</Link>
+                    <button type="submit">Regisztráció</button>
+                    <Link to="/login">Bejelentkezés</Link>
                 </div>
             </form>
         </div>

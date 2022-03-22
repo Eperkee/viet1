@@ -138,39 +138,39 @@ function CreateProduct() {
 
             <form onSubmit={handleSubmit}>
                 <div className="row">
-                    <label htmlFor="product_id">Product ID</label>
+                <label htmlFor="product_id">allat_id</label>
                     <input type="text" name="product_id" id="product_id" required
                     value={product.product_id} onChange={handleChangeInput} disabled={onEdit} />
                 </div>
 
                 <div className="row">
-                    <label htmlFor="title">Title</label>
+                    <label htmlFor="title">Név</label>
                     <input type="text" name="title" id="title" required
                     value={product.title} onChange={handleChangeInput} />
                 </div>
 
                 <div className="row">
-                    <label htmlFor="price">Price</label>
+                    <label htmlFor="price">Támogatási összeg</label>
                     <input type="number" name="price" id="price" required
                     value={product.price} onChange={handleChangeInput} />
                 </div>
 
                 <div className="row">
-                    <label htmlFor="description">Description</label>
+                    <label htmlFor="description">Adatok</label>
                     <textarea type="text" name="description" id="description" required
                     value={product.description} rows="5" onChange={handleChangeInput} />
                 </div>
 
                 <div className="row">
-                    <label htmlFor="content">Content</label>
+                    <label htmlFor="content">Leírás</label>
                     <textarea type="text" name="content" id="content" required
                     value={product.content} rows="7" onChange={handleChangeInput} />
                 </div>
 
                 <div className="row">
-                    <label htmlFor="categories">Categories: </label>
+                    <label htmlFor="categories">Kategóriák: </label>
                     <select name="category" value={product.category} onChange={handleChangeInput} >
-                        <option value="">Please select a category</option>
+                        <option value="">Kérlek válassz kategóriát</option>
                         {
                             categories.map(category => (
                                 <option value={category._id} key={category._id}>
@@ -181,7 +181,7 @@ function CreateProduct() {
                     </select>
                 </div>
 
-                <button type="submit">{onEdit? "Update" : "Create"}</button>
+                <button type="submit">{onEdit? "Frissít" : "Létrehoz"}</button>
             </form>
         </div>
     )
